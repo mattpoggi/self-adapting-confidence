@@ -50,10 +50,10 @@ Estimating the confidence of disparity maps inferred by a stereo algorithm has b
 Download DrivingStereo sequence and pretrained models
 
 DrivingStereo sequence `2018-10-25-07-37-26`:
-[left images](https://drive.google.com/file/d/1yPO5UzEWJRHUav8olyHQQkEWBn-aZizA) [right images](https://drive.google.com/file/d/1mkGQICQ_uucArzCtiVG5oxJLTOGRPsfT)
+[left images](https://drive.google.com/file/d/1yPO5UzEWJRHUav8olyHQQkEWBn-aZizA) - [right images](https://drive.google.com/file/d/1mkGQICQ_uucArzCtiVG5oxJLTOGRPsfT)
 
 Pre-computed disparity maps for sequence `2018-10-25-07-37-26`:
-[Census-SGM](https://drive.google.com/file/d/1f3tbFIxdmxrPjvtFpeO7AaXr45cPBKVZ) [MADNet](https://drive.google.com/file/d/1UnuAQkpidaTqfQiXcHkHKl8H6wsPNbz2) [GANet](https://drive.google.com/file/d/1-VblYLxOlV1Z91STs2w6VSFfbILBXoVb)
+[Census-SGM](https://drive.google.com/file/d/1f3tbFIxdmxrPjvtFpeO7AaXr45cPBKVZ) - [MADNet](https://drive.google.com/file/d/1UnuAQkpidaTqfQiXcHkHKl8H6wsPNbz2) - [GANet](https://drive.google.com/file/d/1-VblYLxOlV1Z91STs2w6VSFfbILBXoVb)
 
 ConfNet weights trained on KITTI:
 [Checkpoints](https://drive.google.com/file/d/1O7kFOxoz7D3-q3fkZo_azcbJTht1BvLh)

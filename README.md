@@ -12,7 +12,7 @@ Copyright (c) 2020 University of Bologna. Patent pending. All rights reserved. L
 [[Paper]](https://mattpoggi.github.io/papers/poggi2020eccv.pdf)
 
 ## Citation
-```shell
+```
 @inproceedings{Poggi_ECCV_2020,
   title     = {Self-adapting confidence estimation for stereo},
   author    = {Poggi, Matteo and

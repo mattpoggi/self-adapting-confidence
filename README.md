@@ -68,7 +68,7 @@ python main.py --mode [mode] \
                --output_path [output_path] \
                --left_dir [left_dir] \
                --right_dir [right_dir] \
-               --disp_dir [disp_dir] \
+               --disp_dir [disp_dir] 
 ```
 
 Main arguments:

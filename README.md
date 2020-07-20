@@ -9,7 +9,7 @@ Copyright (c) 2020 University of Bologna. Patent pending. All rights reserved. L
 <img src=https://mattpoggi.github.io/assets/img/confidence/poggi2020eccv.gif>
 </p>
 
-[[Paper]](https://mattpoggi.github.io/papers/poggi2020eccv.pdf)
+[[Paper]](https://mattpoggi.github.io/assets/papers/poggi2020eccv.pdf)
 
 ## Citation
 ```
@@ -122,7 +122,7 @@ Optional arguments:
 
 ## Results
 
-By Running the `AUC.py` script, you should be able to reproduce the following results (Census-SGM):
+By running the `AUC.py` script, you should be able to reproduce the following results (Census-SGM):
 
 ```
 Measure: reprojection   & Avg. bad3: 21.007%    & Opt. AUC: 0.029       & Avg. AUC: 0.179 \\

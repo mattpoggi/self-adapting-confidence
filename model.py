@@ -180,7 +180,7 @@ class OTB(object):
 
             confidence = ops.depad(confidence, hpad, wpad)
 
-	    outdir = args.output_path + filename
+	    outdir = args.output_path + '/' + filename
             if not os.path.exists(outdir):
                 os.makedirs(outdir)
 

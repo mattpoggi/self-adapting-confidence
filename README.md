@@ -41,7 +41,7 @@ Estimating the confidence of disparity maps inferred by a stereo algorithm has b
 ### Requirements
 
 * `Tensorflow 1.x` (tested with Tensorflow 1.8 and python 2.7)
-* `progressbar`
+* `progressbar2`
 * `numpy`
 * `cv2`
 

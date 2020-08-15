@@ -31,7 +31,7 @@ args = parser.parse_args()
 def main(_):
 
     if args.cpu:
-	os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+        os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
     gpu_opt = tf.GPUOptions(per_process_gpu_memory_fraction=args.mem)
 

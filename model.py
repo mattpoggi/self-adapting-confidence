@@ -20,10 +20,10 @@ class OTB(object):
     def __init__(self, sess, initial_learning_rate, image_height, image_width, mode, dataset, left_dir, right_dir, disp_dir, p, q, colors):
                                   
         self.sess = sess
-	self.mode = mode
+        self.mode = mode
         self.colors = colors
 
-        self.image_height = image_height	
+        self.image_height = image_height        
         self.image_width = image_width
 
         self.initial_learning_rate = initial_learning_rate
@@ -57,7 +57,7 @@ class OTB(object):
                 with tf.variable_scope("conv1"):
                     self.conv1_disparity = ops.conv2d(disp, [kernel_size, kernel_size, 1, filters], 1, True, padding='SAME')
             
-	    model_input = self.conv1_disparity
+            model_input = self.conv1_disparity
             self.net1, self.scale1 = ops.encoding_unit('1', model_input, filters)
 
             self.net2, self.scale2 = ops.encoding_unit('2', self.net1,   filters * 4)
@@ -80,14 +80,14 @@ class OTB(object):
             # texture mask
             self.warped = ops.generate_image_left(self.placeholders['right'], self.placeholders['disp'])
             self.reprojection = tf.reduce_sum(0.85*ops.SSIM(self.warped, self.placeholders['left']) + 0.15*tf.abs(self.warped - self.placeholders['left']), -1, keepdims=True)
-	    self.identity = tf.reduce_sum(0.85*ops.SSIM(self.placeholders['left'], self.placeholders['right']) + 0.15*tf.abs(self.placeholders['left'] - self.placeholders['right']), -1, keepdims=True) 			
+            self.identity = tf.reduce_sum(0.85*ops.SSIM(self.placeholders['left'], self.placeholders['right']) + 0.15*tf.abs(self.placeholders['left'] - self.placeholders['right']), -1, keepdims=True)                        
             self.t = tf.cast(self.identity > self.reprojection, tf.float32)
-	    
+            
             # agreement mask
-	    self.a = tf.cast(tf.py_func(ops.agreement, [self.placeholders['disp'], 2], tf.float32) > (5**2-1)*0.5, tf.float32)
+            self.a = tf.cast(tf.py_func(ops.agreement, [self.placeholders['disp'], 2], tf.float32) > (5**2-1)*0.5, tf.float32)
 
             # uniqueness mask
-	    self.u = tf.py_func(ops.uniqueness, [self.placeholders['disp']], tf.float32)
+            self.u = tf.py_func(ops.uniqueness, [self.placeholders['disp']], tf.float32)
 
             # initializing inliers and outliers masks
             self.P = tf.ones_like(self.placeholders['disp'])
@@ -180,13 +180,13 @@ class OTB(object):
 
             confidence = ops.depad(confidence, hpad, wpad)
 
-	    outdir = args.output_path + '/' + filename
+            outdir = args.output_path + '/' + filename
             if not os.path.exists(outdir):
                 os.makedirs(outdir)
 
             confidence_file = outdir + '/'+self.mode+'.png'
-	    c = confidence[0]
-	    c = (c - np.min(c)) / (np.max(c) - np.min(c))
+            c = confidence[0]
+            c = (c - np.min(c)) / (np.max(c) - np.min(c))
             cv2.imwrite(confidence_file, (c * (2**16-1)).astype('uint16'))
             if self.colors:
                 color_file = outdir + '/'+self.mode+'-color.png'

@@ -27,7 +27,7 @@ badts = []
 samples = open(args.dataset).readlines()
 samples = [s.split('.')[0] for s in samples]
 samples.sort()
-bar = progressbar.ProgressBar(len(samples))
+bar = progressbar.ProgressBar(max_value=len(samples))
 counter=0
 
 if args.logfile is not None:

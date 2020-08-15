@@ -165,7 +165,7 @@ class OTB(object):
         threads = tf.train.start_queue_runners(coord=coord)
 
         print(" [*] Start Testing...")
-        bar = progressbar.ProgressBar(num_samples)
+        bar = progressbar.ProgressBar(max_value=num_samples)
         for step in range(num_samples):
             batch_left, batch_right, batch_disp, filename = self.sess.run([left_batch, right_batch, disp_batch, image_name])
 

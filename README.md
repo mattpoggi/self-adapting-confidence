@@ -1,6 +1,6 @@
 # Self-adapting confidence estimation for stereo
 
-Demo code of "Self-adapting confidence estimation for stereo", [Matteo Poggi](https://mattpoggi.github.io/), [Filippo Aleotti](http://filippoaleotti.github.io/website/), [Fabio Tosi](https://vision.disi.unibo.it/~ftosi/) and [Stefano Mattoccia](https://vision.disi.unibo.it/~smatt/Site/Home.html), ECCV 2020. 
+Demo code of "Self-adapting confidence estimation for stereo", [Matteo Poggi](https://mattpoggi.github.io/), [Filippo Aleotti](http://filippoaleotti.github.io/website/), [Fabio Tosi](https://vision.disi.unibo.it/~ftosi/), Giulio Zaccaroni and [Stefano Mattoccia](https://vision.disi.unibo.it/~smatt/Site/Home.html), ECCV 2020. 
 
 ### License
 Copyright (c) 2020 University of Bologna. Patent pending. All rights reserved. Licensed under the CC BY-NC-SA 4.0 license (https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode ).
@@ -18,6 +18,7 @@ Copyright (c) 2020 University of Bologna. Patent pending. All rights reserved. L
   author    = {Poggi, Matteo and
                Aleotti, Filippo and
                Tosi, Fabio and
+               Zaccaroni, Giulio and
                Mattoccia, Stefano},
   booktitle = {European Conference on Computer Vision (ECCV)},
   year = {2020}
